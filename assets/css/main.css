@@ -22,7 +22,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #0F2027a0 0%, #203A43a0 60%, #2C5364a0 100%), url("../img/1min.png");
+    background: linear-gradient(135deg, #0F2027a0 0%, #203A43a0 60%, #2C5364a0 100%), url("../img/8.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -31,7 +31,7 @@ h1 {
 img.face {
     height: 10rem !important;
     width: 10rem !important;
-    border: 2px solid rgb(0, 162, 255);
+    border: 5px solid rgb(0, 162, 255);
     border-radius: 50%;
 }
 
