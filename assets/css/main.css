@@ -1,10 +1,19 @@
 * {
     margin: 0rem;
     padding: 0rem;
+    box-sizing: border-box;
 }
 
 li {
     list-style: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 html {
@@ -13,16 +22,29 @@ html {
 }
 
 h1 {
+    padding: 1rem 0rem;
     letter-spacing: 3px;
 }
 
-.main-view {
+section {
+    background-color: #2d2d2d;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5rem 1rem;
+}
+
+section:nth-child(2n) {
+    background-color: #6b6b6b;
+}
+
+
+/* Main view */
+
+.main-view {
     height: 100vh;
-    background: linear-gradient(135deg, #0F2027a0 0%, #203A43a0 60%, #2C5364a0 100%), url("../img/8.jpg");
+    background: linear-gradient(135deg, #0F2027a0 0%, #203A43a0 60%, #2C5364a0 100%), url("../img/11.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -31,31 +53,47 @@ h1 {
 img.face {
     height: 10rem !important;
     width: 10rem !important;
-    border: 5px solid rgb(0, 162, 255);
+    border: 5px solid #00a2ff;
     border-radius: 50%;
 }
 
-.main-view *:not(img) {
-    padding: .3rem;
-}
-
-.container {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-}
-
-header {
-    background-color: #f7f7f7;
-    color: #555555;
-    border: 1px solid red;
+nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
     padding: 1rem;
 }
 
-li {
-    padding: .3rem;
+nav ul {
+    display: inherit;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.main-view nav ul li {
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.main-view nav ul li:hover {
+    border-bottom: 2px solid #00a2ff;
+    transition: 500ms ease-in-out;
+}
+
+.main-view nav ul li:hover a {
+    text-shadow: 2px 2px #2d2d2d1c;
+}
+
+#education .degree {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#education li div:not(.degree) {
+    padding-left: .5rem;
+}
+
+#education li {
+    padding: 1rem;
 }
